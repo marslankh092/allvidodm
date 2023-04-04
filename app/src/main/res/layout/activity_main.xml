@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/bottomnav">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="24dp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/text_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:text="@string/app_name"
+                    android:textColor="#fff"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/changelanguage_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/text_top"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/search_edt"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_language_black_24dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center_horizontal"
+                android:weightSum="5">
+
+                <EditText
+                    android:id="@+id/etURL"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/text_top"
+                    android:layout_weight="4"
+                    android:background="@drawable/search_edit_background"
+                    android:drawableLeft="@drawable/chain"
+                    android:drawablePadding="8dp"
+                    android:hint="Paste your link here"
+                    android:paddingStart="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/btnDownload"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/text_top"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/search_edt"
+                    android:layout_weight="1"
+                    android:src="@drawable/download_icon" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/rocket_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/search_edt"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/rocket_icon" />
+
+            <LinearLayout
+                android:id="@+id/switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rocket_img"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="24dp"
+                        android:layout_weight="3"
+                        android:text="Auto Download "
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/chkAutoDownload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:gravity="end"
+                        android:thumb="@drawable/switch_thumb"
+                        android:track="@drawable/switch_track" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rocket_img"
+                android:layout_gravity="start"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="24dp"
+                android:text="@string/simply_copy_the_link_of_video_to_start_download"
+                android:textAlignment="textStart"
+                android:textColor="#898989"
+                android:textSize="14sp" />
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                ads:adSize="MEDIUM_RECTANGLE"
+                ads:adUnitId="@string/AdmobBanner" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shaperound_bottomnav"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        app:menu="@menu/bottom_menu" />
+
+
+</RelativeLayout>
+

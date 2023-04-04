@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.AppIntro:AppIntro:5.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db3010f1c12759342ebc37bb279bf4d9/jetified-AppIntro-5.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db3010f1c12759342ebc37bb279bf4d9/jetified-AppIntro-5.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db3010f1c12759342ebc37bb279bf4d9/jetified-AppIntro-5.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.AppIntro/AppIntro/5.1.0/ba09cf85919ce453fee4b5da339c0767bbd46814/AppIntro-5.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

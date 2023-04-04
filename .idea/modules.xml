@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/All_video_downloader.iml" filepath="$PROJECT_DIR$/.idea/modules/All_video_downloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/All_video_downloader.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/All_video_downloader.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/All_video_downloader.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/All_video_downloader.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/All_video_downloader.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/All_video_downloader.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/All_video_downloader.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/All_video_downloader.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

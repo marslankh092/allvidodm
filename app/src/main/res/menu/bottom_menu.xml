@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_Main"
+        android:icon="@drawable/ic_home_page_icon"
+        android:title="@string/main_name"
+        android:visible="true"
+        />
+    <item
+        android:id="@+id/action_gallery"
+        android:icon="@drawable/ic_gallery_24dp"
+        android:title="@string/gallery_name"
+        android:visible="true"
+        />
+    <item
+        android:id="@+id/action_statussaver"
+        android:icon="@drawable/statuspic"
+        android:title="@string/StatusSaver"
+        />
+    <item
+        android:id="@+id/action_extras"
+        android:icon="@drawable/ic_puzzle"
+        android:title="@string/extrafeatures"
+        />
+    <item
+        android:id="@+id/action_openwhatsapp"
+        android:icon="@drawable/ic_whatsapp"
+        android:title="@string/open_whatsapp_new"
+      />
+</menu>
